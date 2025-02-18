@@ -4,7 +4,19 @@ import 'package:flutter/material.dart';
 class AmazonShelf extends StatelessWidget {
 
   final List<List<String>> movies = [
-    ["Heat", 'assets/Heat.webp']
+    ["Warrior", 'assets/Warrior.webp'],
+    ["Dances With Wolves", 'assets/DancesWithWolves.webp'],
+    ["Mystery, Alaska", 'assets/MysteryAlaska.webp'],
+    ["American Underdog", 'assets/AmericanUnderdog.webp'],
+    ["The Next Three Days", 'assets/TheNextThreeDays.webp'],
+    ["Jumper", 'assets/Jumper.webp'],
+    ["Blue Streak", 'assets/BlueStreak.webp'],
+    ["The Italian Job", 'assets/TheItalianJob.webp'],
+    ["Tucker & Dale Vs Evil", 'assets/TuckerAndDaleVsEvil.webp'],
+    ["See No Evil, Hear No Evil", 'assets/SeeNoEvilHearNoEvil.webp'],
+    ["Point Break", 'assets/PointBreak.webp'],
+    ["Hot Fuzz", 'assets/HotFuzz.webp']
+
  ];
 
   Widget movieTemplate(List<String> movie){
@@ -27,7 +39,7 @@ class AmazonShelf extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 245, 235, 200),
       appBar: AppBar(
-        title: Text("Amazon Movie Shelf", style: TextStyle(color: Colors.yellow, fontSize: 40)),
+        title: Text("Amazon Movies", style: TextStyle(color: Colors.yellow, fontSize: 40)),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 16, 74, 122),
       ),

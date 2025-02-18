@@ -4,8 +4,20 @@ import 'package:flutter/material.dart';
 class YouTubeShelf extends StatelessWidget {
 
   final List<List<String>> movies = [
-    ["Dumb and Dumber", 'assets/DumbAndDumber.webp'], 
+    ["The Convert", 'assets/TheConvert.webp'], 
+    ["OSS117", 'assets/OSS117.webp'], 
+    ["Four Brothers", 'assets/FourBrothers.jpg'], 
+    ["Dumb and Dumber", 'assets/DumbAndDumber.webp'],
+    ["The Covenant", 'assets/TheCovenant.webp'], 
+    ["I Am Chris Farley", 'assets/IAmChrisFarley.webp'], 
     ["Heat", 'assets/Heat.webp'],
+    ["Good Will Hunting", 'assets/GoodWillHunting.webp'],
+    ["The Town", 'assets/TheTown.webp'],
+    ["Ironclad", 'assets/Ironclad.webp'],
+    ["We Are Marshall", 'assets/WeAreMarshall.jpg'],
+    ["John Wick", 'assets/JohnWick.webp'],
+    ["The Place Beyond The Pines", 'assets/ThePlaceBeyondThePines.jpg'],
+    ["Drive", 'assets/Drive.webp']
  ];
 
   Widget movieTemplate(List<String> movie){
@@ -28,7 +40,7 @@ class YouTubeShelf extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 245, 235, 200),
       appBar: AppBar(
-        title: Text("YouTube Movie Shelf", style: TextStyle(color: Colors.yellow, fontSize: 40)),
+        title: Text("YouTube Movies", style: TextStyle(color: Colors.yellow, fontSize: 40)),
         centerTitle: true,
         backgroundColor: const Color.fromARGB(255, 16, 74, 122),
       ),
